@@ -1,68 +1,62 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abdülmecit Aksu — Junior Software Developer &amp; IT Uzmanı</title>
-  <meta name="description" content="Abdülmecit Aksu — Kocaeli Üniversitesi Bilgisayar Programcılığı mezunu. Junior Software Developer & IT Uzmanı özgeçmiş ve portfolyo sayfası." />
-  <meta name="author" content="Abdülmecit Aksu" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdülmecit Aksu — Junior Software Developer & IT Uzmanı</title>
+  <meta name="description" content="Abdülmecit Aksu — Kocaeli Üniversitesi Bilgisayar Programcılığı mezunu. Junior Software Developer & IT Uzmanı.">
+  <meta name="author" content="Abdülmecit Aksu">
 
-  <!-- Fonts: Inter & Plus Jakarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Minimalist Top Navigation -->
+
   <header class="site-header no-print" id="siteHeader">
     <div class="container header-inner">
       <a href="#top" class="site-brand">Abdülmecit Aksu</a>
 
-      <nav class="site-nav" aria-label="Bölümler">
-        <a href="#about" class="active" data-i18n="nav.about">Hakkımda</a>
-        <a href="#experience" data-i18n="nav.experience">Deneyim</a>
-        <a href="#education" data-i18n="nav.education">Eğitim</a>
-        <a href="#skills" data-i18n="nav.skills">Yetkinlikler</a>
-        <a href="#projects" data-i18n="nav.projects">Projeler</a>
-        <a href="#contact" data-i18n="nav.contact">İletişim</a>
+      <nav class="site-nav">
+        <a href="#about" class="active" data-key="navAbout">Hakkımda</a>
+        <a href="#experience" data-key="navExp">Deneyim</a>
+        <a href="#education" data-key="navEdu">Eğitim</a>
+        <a href="#skills" data-key="navSkills">Yetkinlikler</a>
+        <a href="#projects" data-key="navProjects">Projeler</a>
+        <a href="#contact" data-key="navContact">İletişim</a>
       </nav>
 
       <div class="header-tools">
-        <button type="button" class="text-btn" id="langToggleBtn" aria-label="Dil Değiştir">
-          <span id="langLabel">EN</span>
-        </button>
-        <span class="sep" aria-hidden="true">/</span>
-        <button type="button" class="text-btn" id="printBtn" data-i18n="nav.print">
-          PDF İndir
-        </button>
+        <button type="button" class="text-btn" id="langBtn">EN</button>
+        <span class="sep">/</span>
+        <button type="button" class="text-btn" id="printBtn" data-key="navPrint">PDF İndir</button>
       </div>
     </div>
-    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
   </header>
 
   <main id="top" class="container main-wrapper">
-    <!-- ==================== HERO / INTRO ==================== -->
     <section class="intro-section" id="about">
       <div class="intro-header">
         <div class="intro-identity">
           <h1 class="candidate-name">Abdülmecit Aksu</h1>
-          <p class="candidate-role" data-i18n="hero.role">Junior Software Developer &amp; IT Uzmanı</p>
+          <p class="candidate-role" data-key="heroRole">Junior Software Developer & IT Uzmanı</p>
         </div>
 
         <div class="intro-meta">
           <span>Kartepe, Kocaeli / Türkiye</span>
           <span class="meta-dot">•</span>
-          <span data-i18n="hero.workPref">İş yerinde / Hybrid (Kocaeli) &amp; Uzaktan (Remote)</span>
+          <span data-key="heroWorkPref">İş yerinde / Hybrid (Kocaeli) & Uzaktan (Remote)</span>
         </div>
       </div>
 
       <div class="intro-bio">
-        <p data-i18n="hero.bio1">
+        <p data-key="heroBio1">
           Kocaeli Üniversitesi <strong>Bilgisayar Programcılığı</strong> mezunuyum. Eğitim hayatım boyunca ve sonrasında; kurumsal standartlara uygun web uygulamaları ve backend sistemleri geliştirmeye odaklandım. <strong>Temiz kod yazımı</strong>, <strong>veritabanı yönetimi</strong> ve <strong>nesne yönelimli programlama (OOP)</strong> prensiplerini projelerime uygulamaya özen gösteriyorum.
         </p>
-        <p data-i18n="hero.bio2">
+        <p data-key="heroBio2">
           Hem yazılım geliştirme (C#, ASP.NET Core, PHP, SQL) hem de sahadaki bilgi işlem/sistem yönetimi (ERP, donanım, teknik destek) deneyimlerimi birleştirerek, sürekli gelişen teknoloji ekosistemine uyum sağlamayı ve karmaşık problemlere ölçeklenebilir çözümler üretmeyi seviyorum. <strong>Junior Software Developer</strong> olarak sektörel deneyim kazanabileceğim, yenilikçi projelerde yer almaya hazırım.
         </p>
       </div>
@@ -71,51 +65,50 @@
         <a href="mailto:mecitaksu230@gmail.com" class="contact-link primary-link">
           <span>mecitaksu230@gmail.com</span>
         </a>
-        <button type="button" class="copy-btn no-print" id="copyEmailBtn" data-email="mecitaksu230@gmail.com" data-i18n="hero.copyEmail">
+        <button type="button" class="copy-btn no-print" id="copyEmailBtn" data-email="mecitaksu230@gmail.com" data-key="copyEmail">
           E-postayı Kopyala
         </button>
         <a href="https://www.linkedin.com/in/mecit-aksu-359949209/" target="_blank" rel="noopener noreferrer" class="contact-link">
           <span>LinkedIn</span>
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
         </a>
-        <a href="#" class="contact-link github-profile-link" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-link">
           <span>GitHub</span>
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
         </a>
       </div>
     </section>
 
-    <!-- ==================== DENEYİM (EXPERIENCE) ==================== -->
     <section class="cv-section" id="experience">
       <div class="section-grid">
         <div class="section-label-col">
-          <h2 class="section-title" data-i18n="exp.title">Deneyim</h2>
+          <h2 class="section-title" data-key="expTitle">Deneyim</h2>
         </div>
 
         <div class="section-content-col">
           <article class="timeline-item">
             <div class="item-header">
               <div>
-                <h3 class="item-title" data-i18n="exp.role">IT Teknisyeni (Stajyer)</h3>
+                <h3 class="item-title" data-key="expRole">IT Teknisyeni (Stajyer)</h3>
                 <p class="item-org">Marfom Sünger San. ve Tic. A.Ş.</p>
               </div>
               <div class="item-meta">
-                <span data-i18n="exp.date">Temmuz 2025 – Ağustos 2025 (2 Ay)</span>
-                <span data-i18n="exp.loc">Hendek, Sakarya · Ofiste</span>
+                <span data-key="expDate">Temmuz 2025 – Ağustos 2025 (2 Ay)</span>
+                <span data-key="expLoc">Hendek, Sakarya · Ofiste</span>
               </div>
             </div>
 
             <ul class="item-list">
-              <li data-i18n="exp.b1">
+              <li data-key="expB1">
                 Kurumsal <strong>ERP (Kurumsal Kaynak Planlaması)</strong> sistemlerinin operasyonel süreçlerine destek verilmesi ve <strong>SQL</strong> tabanlı veri kontrollerinin sağlanması.
               </li>
-              <li data-i18n="exp.b2">
+              <li data-key="expB2">
                 Şirket içi bilgi işlem altyapısı, <strong>QNAP</strong> depolama sistemleri ve sunucu/sistem yönetimi süreçlerinde aktif görev alınması.
               </li>
-              <li data-i18n="exp.b3">
+              <li data-key="expB3">
                 Son kullanıcı donanım, yazılım ve ağ sorunlarının tespiti, sorun giderme (troubleshooting) ve teknik servis süreçlerinin yürütülmesi.
               </li>
-              <li data-i18n="exp.b4">
+              <li data-key="expB4">
                 Microsoft Office (özellikle ileri düzey Excel) ve kurumsal yazılım araçlarının departmanlar arası verimli kullanımına teknik destek sağlanması.
               </li>
             </ul>
@@ -124,47 +117,44 @@
       </div>
     </section>
 
-    <!-- ==================== EĞİTİM (EDUCATION) ==================== -->
     <section class="cv-section" id="education">
       <div class="section-grid">
         <div class="section-label-col">
-          <h2 class="section-title" data-i18n="edu.title">Eğitim</h2>
+          <h2 class="section-title" data-key="eduTitle">Eğitim</h2>
         </div>
 
         <div class="section-content-col stack-lg">
-          <!-- Kocaeli Üniversitesi -->
           <article class="timeline-item">
             <div class="item-header">
               <div>
                 <h3 class="item-title">Kocaeli Üniversitesi</h3>
-                <p class="item-org" data-i18n="edu.kouDegree">Önlisans – Bilgisayar Programcılığı (Computer Programming)</p>
+                <p class="item-org" data-key="kouDegree">Önlisans – Bilgisayar Programcılığı (Computer Programming)</p>
               </div>
               <div class="item-meta">
-                <span data-i18n="edu.kouDate">Ekim 2023 – Eylül 2025</span>
+                <span data-key="kouDate">Ekim 2023 – Eylül 2025</span>
               </div>
             </div>
 
             <div class="edu-details">
-              <p data-i18n="edu.kouFocus">
+              <p data-key="kouFocus">
                 <strong>Odak Alanları:</strong> Nesne Yönelimli Programlama (OOP), Web Tabanlı Uygulama Geliştirme, İlişkisel Veritabanı Yönetimi (SQL), Veri Yapıları.
               </p>
-              <p data-i18n="edu.kouTech">
+              <p data-key="kouTech">
                 <strong>Öne Çıkan Teknolojiler:</strong> C#, ASP.NET Core, PHP, C++, SQL, HTML5, CSS3, JavaScript.
               </p>
             </div>
           </article>
 
-          <!-- 42 Türkiye -->
           <article class="timeline-item">
             <div class="item-header">
               <div>
                 <h3 class="item-title">42 Türkiye</h3>
-                <p class="item-org" data-i18n="edu.42Degree">Yazılım Geliştirme &amp; Akran Öğrenmesi (Peer-to-Peer) Programı</p>
+                <p class="item-org" data-key="ftDegree">Yazılım Geliştirme & Akran Öğrenmesi (Peer-to-Peer) Programı</p>
               </div>
             </div>
 
             <div class="edu-details">
-              <p data-i18n="edu.42Desc">
+              <p data-key="ftDesc">
                 Proje tabanlı yoğun kodlama, algoritmik düşünme ve düşük seviyeli programlama (C / C++) pratikleri.
               </p>
             </div>
@@ -173,63 +163,62 @@
       </div>
     </section>
 
-    <!-- ==================== TEKNİK YETKİNLİKLER (SKILLS) ==================== -->
     <section class="cv-section" id="skills">
       <div class="section-grid">
         <div class="section-label-col">
-          <h2 class="section-title" data-i18n="skills.title">Teknik Yetkinlikler</h2>
+          <h2 class="section-title" data-key="skillsTitle">Teknik Yetkinlikler</h2>
         </div>
 
         <div class="section-content-col">
           <div class="skills-table">
             <div class="skill-row">
-              <div class="skill-cat" data-i18n="skills.cat1">Backend &amp; Programlama</div>
-              <div class="skill-vals" data-i18n="skills.val1">
+              <div class="skill-cat" data-key="skillCat1">Backend & Programlama</div>
+              <div class="skill-vals">
                 <span class="tag">C#</span>
                 <span class="tag">ASP.NET Core</span>
                 <span class="tag">PHP</span>
                 <span class="tag">C++</span>
-                <span class="tag">Nesne Yönelimli Programlama (OOP)</span>
+                <span class="tag" data-key="tagOop">Nesne Yönelimli Programlama (OOP)</span>
               </div>
             </div>
 
             <div class="skill-row">
-              <div class="skill-cat" data-i18n="skills.cat2">Frontend Geliştirme</div>
-              <div class="skill-vals" data-i18n="skills.val2">
+              <div class="skill-cat" data-key="skillCat2">Frontend Geliştirme</div>
+              <div class="skill-vals">
                 <span class="tag">HTML5</span>
                 <span class="tag">CSS3</span>
                 <span class="tag">JavaScript</span>
-                <span class="tag">Responsive Web Tasarımı</span>
+                <span class="tag" data-key="tagResponsive">Responsive Web Tasarımı</span>
               </div>
             </div>
 
             <div class="skill-row">
-              <div class="skill-cat" data-i18n="skills.cat3">Veritabanı Yönetimi</div>
-              <div class="skill-vals" data-i18n="skills.val3">
+              <div class="skill-cat" data-key="skillCat3">Veritabanı Yönetimi</div>
+              <div class="skill-vals">
                 <span class="tag">SQL</span>
-                <span class="tag">Veritabanı Tasarımı</span>
-                <span class="tag">Sorgu Optimizasyonu</span>
+                <span class="tag" data-key="tagDbDesign">Veritabanı Tasarımı</span>
+                <span class="tag" data-key="tagQueryOpt">Sorgu Optimizasyonu</span>
               </div>
             </div>
 
             <div class="skill-row">
-              <div class="skill-cat" data-i18n="skills.cat4">Sistem &amp; Bilgi İşlem (IT)</div>
-              <div class="skill-vals" data-i18n="skills.val4">
-                <span class="tag">Sistem Yönetimi</span>
-                <span class="tag">Bilgi İşlem</span>
-                <span class="tag">Teknik Destek</span>
-                <span class="tag">Sorun Giderme (Troubleshooting)</span>
-                <span class="tag">Bilgisayar Donanımı</span>
-                <span class="tag">Teknik Servisler</span>
+              <div class="skill-cat" data-key="skillCat4">Sistem & Bilgi İşlem (IT)</div>
+              <div class="skill-vals">
+                <span class="tag" data-key="tagSysAdmin">Sistem Yönetimi</span>
+                <span class="tag" data-key="tagIt">Bilgi İşlem</span>
+                <span class="tag" data-key="tagSupport">Teknik Destek</span>
+                <span class="tag" data-key="tagTrouble">Sorun Giderme (Troubleshooting)</span>
+                <span class="tag" data-key="tagHardware">Bilgisayar Donanımı</span>
+                <span class="tag" data-key="tagServices">Teknik Servisler</span>
               </div>
             </div>
 
             <div class="skill-row">
-              <div class="skill-cat" data-i18n="skills.cat5">Kurumsal &amp; Depolama</div>
-              <div class="skill-vals" data-i18n="skills.val5">
-                <span class="tag">ERP (Kurumsal Kaynak Planlaması)</span>
-                <span class="tag">QNAP Depolama Sistemleri</span>
-                <span class="tag">Microsoft Office &amp; İleri Excel</span>
+              <div class="skill-cat" data-key="skillCat5">Kurumsal & Depolama</div>
+              <div class="skill-vals">
+                <span class="tag" data-key="tagErp">ERP (Kurumsal Kaynak Planlaması)</span>
+                <span class="tag" data-key="tagQnap">QNAP Depolama Sistemleri</span>
+                <span class="tag" data-key="tagExcel">Microsoft Office & İleri Excel</span>
               </div>
             </div>
           </div>
@@ -237,25 +226,23 @@
       </div>
     </section>
 
-    <!-- ==================== ÖNE ÇIKAN PROJELER (PROJECTS) ==================== -->
     <section class="cv-section" id="projects">
       <div class="section-grid">
         <div class="section-label-col">
-          <h2 class="section-title" data-i18n="proj.title">Öne Çıkan Projeler</h2>
+          <h2 class="section-title" data-key="projTitle">Öne Çıkan Projeler</h2>
         </div>
 
         <div class="section-content-col">
           <div class="projects-list">
-            <!-- Proje 1 -->
             <article class="project-item">
               <div class="project-top">
-                <h3 class="item-title" data-i18n="proj.p1Title">Kurumsal Web Uygulaması &amp; Yönetim Paneli</h3>
-                <a href="#" class="project-link github-project-link" data-proj-link="1" target="_blank" rel="noopener noreferrer">
+                <h3 class="item-title" data-key="proj1Title">Kurumsal Web Uygulaması & Yönetim Paneli</h3>
+                <a href="https://github.com/" class="project-link" target="_blank" rel="noopener noreferrer">
                   <span>GitHub</span>
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
                 </a>
               </div>
-              <p class="project-desc" data-i18n="proj.p1Desc">
+              <p class="project-desc" data-key="proj1Desc">
                 Nesne yönelimli programlama (OOP) ve temiz kod standartlarıyla geliştirilmiş, rol tabanlı yetkilendirme ve veritabanı işlemlerini kapsayan full-stack web uygulaması.
               </p>
               <div class="project-tags">
@@ -268,16 +255,15 @@
               </div>
             </article>
 
-            <!-- Proje 2 -->
             <article class="project-item">
               <div class="project-top">
-                <h3 class="item-title" data-i18n="proj.p2Title">Dinamik İçerik ve Veri Yönetim Sistemi</h3>
-                <a href="#" class="project-link github-project-link" data-proj-link="2" target="_blank" rel="noopener noreferrer">
+                <h3 class="item-title" data-key="proj2Title">Dinamik İçerik ve Veri Yönetim Sistemi</h3>
+                <a href="https://github.com/" class="project-link" target="_blank" rel="noopener noreferrer">
                   <span>GitHub</span>
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
                 </a>
               </div>
-              <p class="project-desc" data-i18n="proj.p2Desc">
+              <p class="project-desc" data-key="proj2Desc">
                 İlişkisel veritabanı mimarisi üzerine kurgulanmış, CRUD operasyonlarını ve raporlama süreçlerini hızlandıran web tabanlı çözüm.
               </p>
               <div class="project-tags">
@@ -292,21 +278,20 @@
       </div>
     </section>
 
-    <!-- ==================== İLETİŞİM (CONTACT) ==================== -->
     <section class="cv-section contact-section" id="contact">
       <div class="section-grid">
         <div class="section-label-col">
-          <h2 class="section-title" data-i18n="contact.title">İletişim</h2>
+          <h2 class="section-title" data-key="contactTitle">İletişim</h2>
         </div>
 
         <div class="section-content-col">
-          <p class="contact-text" data-i18n="contact.desc">
+          <p class="contact-text" data-key="contactDesc">
             <strong>Junior Software Developer</strong> veya <strong>Bilgi İşlem / Sistem Destek</strong> pozisyonlarındaki fırsatlar için benimle doğrudan iletişime geçebilirsiniz.
           </p>
 
           <div class="contact-details">
             <div class="contact-row">
-              <span class="contact-key" data-i18n="contact.emailLabel">E-posta</span>
+              <span class="contact-key" data-key="emailLabel">E-posta</span>
               <a href="mailto:mecitaksu230@gmail.com" class="contact-val">mecitaksu230@gmail.com</a>
             </div>
             <div class="contact-row">
@@ -316,8 +301,8 @@
               </a>
             </div>
             <div class="contact-row">
-              <span class="contact-key" data-i18n="contact.locLabel">Konum</span>
-              <span class="contact-val" data-i18n="contact.locVal">Kartepe, Kocaeli / Türkiye</span>
+              <span class="contact-key" data-key="locLabel">Konum</span>
+              <span class="contact-val" data-key="locVal">Kartepe, Kocaeli / Türkiye</span>
             </div>
           </div>
         </div>
@@ -328,12 +313,11 @@
   <footer class="site-footer no-print">
     <div class="container footer-inner">
       <span>© Abdülmecit Aksu</span>
-      <span data-i18n="footer.note">Junior Software Developer &amp; IT Uzmanı</span>
+      <span data-key="footerNote">Junior Software Developer & IT Uzmanı</span>
     </div>
   </footer>
 
-  <!-- Subtle Copy Feedback -->
-  <div class="toast no-print" id="toast" role="status" aria-live="polite">E-posta kopyalandı</div>
+  <div class="toast no-print" id="toast">E-posta kopyalandı</div>
 
   <script src="script.js"></script>
 </body>

@@ -1,8 +1,3 @@
-/* ==========================================================================
-   ABDÜLMECİT AKSU — MINIMALIST EDITORIAL CV & PORTFOLIO
-   (Same Palette + Subtle Refined Motion & Micro-Interactions)
-   ========================================================================== */
-
 :root {
   --bg: #faf9f6;
   --surface: #ffffff;
@@ -11,9 +6,8 @@
   --text-muted: #767c84;
   --border: #e6e4df;
   --border-strong: #cfd2d6;
-  --accent: #18181b;
   --tag-bg: #f1f0ec;
-  --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 *,
@@ -37,16 +31,15 @@ body {
   line-height: 1.68;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transition: opacity 0.18s ease;
+}
+
+main {
+  transition: opacity 0.2s var(--ease), transform 0.2s var(--ease);
 }
 
 body.lang-switching main {
   opacity: 0.45;
   transform: translateY(2px);
-}
-
-main {
-  transition: opacity 0.22s var(--ease-out-expo), transform 0.22s var(--ease-out-expo);
 }
 
 h1, h2, h3 {
@@ -74,15 +67,10 @@ button {
   padding: 0 28px;
 }
 
-/* ==========================================================================
-   SUBTLE SCROLL REVEAL ANIMATIONS
-   ========================================================================== */
 .reveal {
   opacity: 0;
   transform: translateY(16px);
-  transition:
-    opacity 0.65s var(--ease-out-expo),
-    transform 0.65s var(--ease-out-expo);
+  transition: opacity 0.65s var(--ease), transform 0.65s var(--ease);
   will-change: opacity, transform;
 }
 
@@ -91,9 +79,7 @@ button {
   transform: translateY(0);
 }
 
-/* ==========================================================================
-   HEADER & READING PROGRESS LINE
-   ========================================================================== */
+/* Header */
 .site-header {
   position: sticky;
   top: 0;
@@ -102,7 +88,7 @@ button {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
-  transition: box-shadow 0.3s var(--ease-out-expo);
+  transition: box-shadow 0.3s var(--ease);
 }
 
 .site-header.scrolled {
@@ -165,7 +151,7 @@ button {
   background: var(--text-primary);
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 0.3s var(--ease-out-expo);
+  transition: transform 0.3s var(--ease);
 }
 
 .site-nav a:hover,
@@ -191,7 +177,7 @@ button {
   color: var(--text-secondary);
   padding: 5px 8px;
   border-radius: 6px;
-  transition: color 0.2s ease, background 0.2s ease, transform 0.2s var(--ease-out-expo);
+  transition: color 0.2s ease, background 0.2s ease, transform 0.2s var(--ease);
 }
 
 .text-btn:hover {
@@ -209,9 +195,7 @@ button {
   font-size: 0.8rem;
 }
 
-/* ==========================================================================
-   INTRO / HERO SECTION
-   ========================================================================== */
+/* Intro */
 .main-wrapper {
   padding-top: 64px;
   padding-bottom: 72px;
@@ -294,13 +278,13 @@ button {
   transition:
     border-color 0.22s ease,
     background 0.22s ease,
-    transform 0.25s var(--ease-out-expo),
-    box-shadow 0.25s var(--ease-out-expo);
+    transform 0.25s var(--ease),
+    box-shadow 0.25s var(--ease);
 }
 
 .contact-link svg,
 .project-link svg {
-  transition: transform 0.25s var(--ease-out-expo);
+  transition: transform 0.25s var(--ease);
 }
 
 .contact-link:hover,
@@ -332,9 +316,7 @@ button {
   box-shadow: 0 10px 22px -8px rgba(20, 21, 23, 0.25);
 }
 
-/* ==========================================================================
-   EDITORIAL TWO-COLUMN SECTIONS
-   ========================================================================== */
+/* Sections */
 .cv-section {
   padding: 44px 0;
   border-bottom: 1px solid var(--border);
@@ -359,7 +341,7 @@ button {
   letter-spacing: 0.07em;
   color: var(--text-muted);
   padding-top: 3px;
-  transition: color 0.25s ease, transform 0.25s var(--ease-out-expo);
+  transition: color 0.25s ease, transform 0.25s var(--ease);
 }
 
 .cv-section:hover .section-title {
@@ -373,14 +355,12 @@ button {
   gap: 32px;
 }
 
-/* ==========================================================================
-   TIMELINE ITEMS (EXPERIENCE & EDUCATION)
-   ========================================================================== */
+/* Experience & Education */
 .timeline-item {
   position: relative;
   padding-left: 16px;
   border-left: 2px solid var(--border);
-  transition: border-color 0.3s var(--ease-out-expo), transform 0.3s var(--ease-out-expo);
+  transition: border-color 0.3s var(--ease), transform 0.3s var(--ease);
 }
 
 .timeline-item:hover {
@@ -465,9 +445,7 @@ button {
   font-size: 0.93rem;
 }
 
-/* ==========================================================================
-   SKILLS TABLE
-   ========================================================================== */
+/* Skills */
 .skills-table {
   display: flex;
   flex-direction: column;
@@ -512,7 +490,7 @@ button {
   font-size: 0.82rem;
   font-weight: 500;
   transition:
-    transform 0.22s var(--ease-out-expo),
+    transform 0.22s var(--ease),
     background-color 0.22s ease,
     border-color 0.22s ease,
     box-shadow 0.22s ease;
@@ -525,9 +503,7 @@ button {
   box-shadow: 0 4px 10px -3px rgba(20, 21, 23, 0.07);
 }
 
-/* ==========================================================================
-   PROJECTS
-   ========================================================================== */
+/* Projects */
 .projects-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -544,8 +520,8 @@ button {
   justify-content: space-between;
   transition:
     border-color 0.25s ease,
-    transform 0.3s var(--ease-out-expo),
-    box-shadow 0.3s var(--ease-out-expo);
+    transform 0.3s var(--ease),
+    box-shadow 0.3s var(--ease);
 }
 
 .project-item:hover {
@@ -590,9 +566,7 @@ button {
   margin-top: auto;
 }
 
-/* ==========================================================================
-   CONTACT SECTION
-   ========================================================================== */
+/* Contact & Footer */
 .contact-text {
   color: var(--text-secondary);
   font-size: 0.95rem;
@@ -618,7 +592,7 @@ button {
   border-bottom: 1px solid var(--border);
   border-radius: 6px;
   font-size: 0.92rem;
-  transition: background-color 0.2s ease, padding-left 0.25s var(--ease-out-expo);
+  transition: background-color 0.2s ease, padding-left 0.25s var(--ease);
 }
 
 .contact-row:hover {
@@ -640,9 +614,6 @@ a.contact-val:hover {
   text-decoration: underline;
 }
 
-/* ==========================================================================
-   FOOTER & TOAST
-   ========================================================================== */
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 26px 0;
@@ -672,7 +643,7 @@ a.contact-val:hover {
   opacity: 0;
   transform: translateY(12px);
   pointer-events: none;
-  transition: opacity 0.25s var(--ease-out-expo), transform 0.25s var(--ease-out-expo);
+  transition: opacity 0.25s var(--ease), transform 0.25s var(--ease);
 }
 
 .toast.show {
@@ -693,9 +664,6 @@ a.contact-val:hover {
   }
 }
 
-/* ==========================================================================
-   RESPONSIVE
-   ========================================================================== */
 @media (max-width: 768px) {
   .site-nav {
     display: none;
@@ -729,9 +697,6 @@ a.contact-val:hover {
   }
 }
 
-/* ==========================================================================
-   PRINT (A4 PDF RESUME)
-   ========================================================================== */
 @media print {
   @page {
     size: A4;
